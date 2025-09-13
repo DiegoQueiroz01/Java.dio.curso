@@ -22,7 +22,7 @@ public class SalarioFuncionario{
         }
         else if(salarioBruto > 1100 && salarioBruto <= 2500){
             imposto = salarioBruto * 10 / 100;
-            salario = (salarioBruto - imposto) * adicional;
+            salario = (salarioBruto - imposto) + adicional;
             System.out.println("Seu salário é de R$" + salario);
         }
         else if(salarioBruto > 2500){
