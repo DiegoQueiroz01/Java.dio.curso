@@ -1,3 +1,4 @@
+package CodigosUsandoEmAula;
 import java.util.Scanner;
 
 public class OperadoresEAtributos{
