@@ -1,4 +1,4 @@
-package Dio.curso.modulos.POOeEstruturadeDados.Exercicios.PetShop;
+package Dio.curso.modulos.POO_Estrutura_de_Dados.Exercicios.Conta_Bancaria;
 
 public class Pet {
     private final String name;
