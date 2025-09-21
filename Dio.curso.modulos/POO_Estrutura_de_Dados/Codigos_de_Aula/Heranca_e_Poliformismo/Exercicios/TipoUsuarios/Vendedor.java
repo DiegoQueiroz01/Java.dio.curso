@@ -8,18 +8,22 @@ public class Vendedor extends Gerente{
 
     Scanner scan = new Scanner(System.in);
 
-    public Vendedor(String nome, String email, int senha){
-        super(nome, email, senha);
+    public Vendedor(String nome, String email, int senha, boolean adm){
+        super(nome, email, senha, adm);
+        this.adm = false;
     }
     //metódos de venda
     public void registVenda(int quantVendas){
-        System.out.println("Informe quantidade de itens vendidos: ");
+        System.out.print("Informe quantidade de itens vendidos: ");
         int venda = scan.nextInt();
         this.quantVendas += venda;
+        System.out.print("Informe o vendedor: ");
+        //String vendedor = scan.nextLine();
     }
 
     public void consultVendas(){
         System.out.println("Número de vendas realizadas: " + this.quantVendas);
+
     }
 
     public int getQuantVendas() {

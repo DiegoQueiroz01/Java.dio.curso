@@ -10,39 +10,40 @@ public class Gerente {
 
     Scanner scan = new Scanner(System.in);
 
-    public Gerente(String nome, String email, int senha) {
+    public Gerente(String nome, String email, int senha, boolean adm) {
         this.nome = nome;
         this.email = email;
         this.senha = senha;
+        this.adm = true;
     }
 
     //metódos para pedir que o gerente faça seu registro
-    void registNome (String nome){ //insere que o gerente faça o primeiro registro.
+    public void registNome (String nome){ //insere que o gerente faça o primeiro registro.
         System.out.print("Insira seu nome de usuário: ");
         this.nome = scan.nextLine();
     }
-    void registEmail (String email){
+    public void registEmail (String email){
         System.out.print("Insira seu e-mail: ");
         this.email = scan.nextLine();
     }
-    void criarSenha ( int senha){
+    public void criarSenha ( int senha){
         System.out.print("Crie uma senha: " +
                 "(use somente números inteiros)");
         this.senha = scan.nextInt();
     }
 
     //metódos para alterar informações de login
-    void mudetNome(String nome){
+    public void mudetNome(String nome){
         System.out.print("Nome atual: " + this.nome);
         System.out.print("\nNovo nome: ");
         this.nome = scan.nextLine();
     }
-    void mudeSenha(int senha){
+    public void mudeSenha(int senha){
         System.out.print("Senha atual: " + this.senha);
         System.out.println("\nNova senha: ");
         this.senha = scan.nextInt();
     }
-    void mudeEmail(String email){
+    public void mudeEmail(String email){
         System.out.print("Deseja alterar seu e-mail[S/N]: ");
         String res = String.valueOf(scan.next().equalsIgnoreCase("S/N"));
         if(res == "S"){
@@ -54,8 +55,11 @@ public class Gerente {
         }
     }
 
-    void Relatorio(){
+    public void Relatorio(){
         System.out.println("===== Relatório =====");
+    }
+    public void imprimirRelatorio(){
+
     }
 
     public String getNome() {

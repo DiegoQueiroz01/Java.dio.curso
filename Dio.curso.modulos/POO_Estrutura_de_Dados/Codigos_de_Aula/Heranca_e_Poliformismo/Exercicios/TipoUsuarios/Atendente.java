@@ -7,8 +7,10 @@ public class Atendente extends Gerente{
     private float valorCaixa;
     private boolean adm = false;
 
-    public Atendente(String nome, String email, int senha){
-        super(nome, email, senha);
+    public Atendente(String nome, String email, int senha, boolean adm){
+        super(nome, email, senha, adm);
+        this.adm = false;
+        this.valorCaixa = valorCaixa;
         }
 
     public void receberPagamento(){
