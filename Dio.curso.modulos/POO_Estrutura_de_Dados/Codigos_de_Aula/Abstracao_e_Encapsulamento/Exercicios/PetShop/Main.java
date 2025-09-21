@@ -1,10 +1,12 @@
-package Dio.curso.modulos.POO_Estrutura_de_Dados.Exercicios.Conta_Bancaria;
+package Dio.curso.modulos.POO_Estrutura_de_Dados.Codigos_de_Aula.Abstracao_e_Encapsulamento.Exercicios.PetShop;
+
+import Dio.curso.modulos.POO_Estrutura_de_Dados.Exercicios.Conta_Bancaria.Pet;
 
 import java.util.Scanner;
 
 public class Main {
         private final static Scanner scan = new Scanner(System.in);
-        private final static PetMachine petMachine = new PetMachine();
+        private final static Dio.curso.modulos.POO_Estrutura_de_Dados.Exercicios.Conta_Bancaria.PetMachine petMachine = new Dio.curso.modulos.POO_Estrutura_de_Dados.Exercicios.Conta_Bancaria.PetMachine();
     public static void main(String[] args){
         var option = -1;
 
@@ -24,9 +26,11 @@ public class Main {
             option = scan.nextInt();
 
             switch(option){
-                case 1 -> petMachine.takeAShower();
+                case 1 -> {
+                    petMachine.takeAShower();
+                }
                 case 2 -> setWater();
-                case 3- > setShampoo();
+                case 3-> setShampoo();
                 case 4 -> verifyWater();
                 case 5 -> verifyShampoo();
                 case 6 -> checkIfHasPetInMachine();
@@ -37,6 +41,9 @@ public class Main {
                 default -> System.out.println("Opção inválida.");
             }
         }while (option != 0);
+    }
+
+    private static void checkIfHasPetInMachine() {
     }
 
     private static void setShampoo(){
@@ -51,12 +58,12 @@ public class Main {
 
     private static void verifyWater(){
         var amout = petMachine.getWater();
-        System.out.println("A máquna está no momento com " + amount + " litrros(s) e água.");
+        //System.out.println("A máquna está no momento com " + amount + " litrros(s) e água.");
     }
 
     private static void verifyShampoo(){
         var amout = petMachine.getShampoo();
-        System.out.println("A máquna está no momento com " + amount + " litrros(s) e shampoo.");
+        //System.out.println("A máquna está no momento com " + amount + " litrros(s) e shampoo.");
     }
 
     private static void checkIfHasPetMachine(){
@@ -71,8 +78,8 @@ public class Main {
             name = scan.next();
         }
         System.out.print("Informe o nome do pet: ");
-        var name = scan.next();
-        var pet = new Pet(name);
+        name = scan.next();
+        Pet pet = new Pet(name);
         petMachine.setPet(pet);
         System.out.println("O pet " + pet.getName() + " foi colocado na máquina.");
     }

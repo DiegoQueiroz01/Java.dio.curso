@@ -1,9 +1,9 @@
-package POO_Estrutura_de_Dados.Codigos_de_Aula.Herança_e_Poliformismo; 
+package Dio.curso.modulos.POO_Estrutura_de_Dados.Codigos_de_Aula.Heranca_e_Poliformismo.Codigos_de_Aula;
 
-public class Manager extends Employee{
+public class Manager extends Employee {
     private String login;
     private String password;
-    private double commmission;
+    private double commission;
 
     public String getLogin() {
         return login;
@@ -21,11 +21,11 @@ public class Manager extends Employee{
         this.password = password;
     }
 
-    public double getCommmission() {
-        return commmission;
+    public double getCommission() {
+        return commission;
     }
 
-    public void setCommmission(double commmission) {
-        this.commmission = commmission;
+    public void setCommission(double commmission) {
+        this.commission = commmission;
     }
 }

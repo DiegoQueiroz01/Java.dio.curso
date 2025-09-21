@@ -4,7 +4,7 @@ public class PetMachine {
     private boolean clean = true;
     private int water = 30;
     private int shampoo = 10;
-    private Pet pet;
+    private Dio.curso.modulos.POO_Estrutura_de_Dados.Exercicios.Conta_Bancaria.Pet pet;
 
     public void takeAShower(){
         if(this.pet == null){
@@ -44,7 +44,7 @@ public class PetMachine {
         return pet != null;
     }
 
-    public void setPet(Pet pet){
+    public void setPet(Dio.curso.modulos.POO_Estrutura_de_Dados.Exercicios.Conta_Bancaria.Pet pet){
         if(hasPet()){
             System.out.println("O pet " + this.pet.getName() + " está na máquina nesse momento.");
             return;

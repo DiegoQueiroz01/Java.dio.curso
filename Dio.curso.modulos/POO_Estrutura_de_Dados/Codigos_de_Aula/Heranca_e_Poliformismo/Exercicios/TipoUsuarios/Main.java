@@ -18,7 +18,7 @@ public class Main {
             System.out.println("2. Consultar número de vendas.");
             System.out.println("3. Receber pagamento.");
             System.out.println("4. Fechar caixa.");
-            System.out.println("5. Realizar Cadastro.");
+            //System.out.println("5. Realizar Cadastro.");
             System.out.println("0. Sair.");
 
             System.out.print("\ninsira a opção: ");
@@ -37,6 +37,6 @@ public class Main {
 
         }
         public static void seguranca(){
-            
+
         }
 }

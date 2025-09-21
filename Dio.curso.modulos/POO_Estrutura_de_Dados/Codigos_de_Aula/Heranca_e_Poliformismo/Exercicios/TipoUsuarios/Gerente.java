@@ -55,13 +55,6 @@ public class Gerente {
         }
     }
 
-    public void Relatorio(){
-        System.out.println("===== Relatório =====");
-    }
-    public void imprimirRelatorio(){
-
-    }
-
     public String getNome() {
         return nome;
     }

@@ -1,4 +1,4 @@
-package Exercicios;
+package Dio.curso.modulos.POO_Estrutura_de_Dados.Codigos_de_Aula.Heranca_e_Poliformismo.Exercicios;
 
 import java.util.Scanner;
 
