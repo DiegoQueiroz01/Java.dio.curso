@@ -1,10 +1,10 @@
-package Dio.curso.modulos.POO_Estrutura_de_Dados.Exercicios.Conta_Bancaria;
+package Dio.curso.modulos.POO_Estrutura_de_Dados.Abstracao_e_Encapsulamento.Exercicios.PetShop;
 
 public class PetMachine {
     private boolean clean = true;
     private int water = 30;
     private int shampoo = 10;
-    private Dio.curso.modulos.POO_Estrutura_de_Dados.Exercicios.Conta_Bancaria.Pet pet;
+    private Pet pet;
 
     public void takeAShower(){
         if(this.pet == null){
@@ -44,7 +44,7 @@ public class PetMachine {
         return pet != null;
     }
 
-    public void setPet(Dio.curso.modulos.POO_Estrutura_de_Dados.Exercicios.Conta_Bancaria.Pet pet){
+    public void setPet(Pet pet){
         if(hasPet()){
             System.out.println("O pet " + this.pet.getName() + " está na máquina nesse momento.");
             return;

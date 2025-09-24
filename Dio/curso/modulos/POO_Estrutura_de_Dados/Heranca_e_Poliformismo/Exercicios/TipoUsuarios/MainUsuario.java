@@ -1,8 +1,8 @@
-package Dio.curso.modulos.POO_Estrutura_de_Dados.Codigos_de_Aula.Heranca_e_Poliformismo.Exercicios.TipoUsuarios;
+package Dio.curso.modulos.POO_Estrutura_de_Dados.Heranca_e_Poliformismo.Exercicios.TipoUsuarios;
 
 import java.util.Scanner;
 
-public class Main {
+public class MainUsuario {
     private final static Scanner scan = new Scanner(System.in);
 
     public static void main(String[] args){

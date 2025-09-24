@@ -1,4 +1,4 @@
-package Dio.curso.modulos.POO_Estrutura_de_Dados.Codigos_de_Aula.Heranca_e_Poliformismo.Codigos_de_Aula;
+package Dio.curso.modulos.POO_Estrutura_de_Dados.Heranca_e_Poliformismo.Codigos_de_Aula;
 
 public class Main {
     public static void main(String[] args){

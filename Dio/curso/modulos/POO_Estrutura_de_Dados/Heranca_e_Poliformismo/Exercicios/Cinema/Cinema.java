@@ -1,4 +1,4 @@
-package Dio.curso.modulos.POO_Estrutura_de_Dados.Codigos_de_Aula.Heranca_e_Poliformismo.Exercicios.Cinema;
+package Dio.curso.modulos.POO_Estrutura_de_Dados.Heranca_e_Poliformismo.Exercicios.Cinema;
 
 public class Cinema {
     public static void main(String[] args){

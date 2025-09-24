@@ -1,4 +1,4 @@
-package Dio.curso.modulos.POO_Estrutura_de_Dados.Codigos_de_Aula.Heranca_e_Poliformismo.Exercicios.Cinema;
+package Dio.curso.modulos.POO_Estrutura_de_Dados.Heranca_e_Poliformismo.Exercicios.Cinema;
 
 import java.util.Scanner;
 

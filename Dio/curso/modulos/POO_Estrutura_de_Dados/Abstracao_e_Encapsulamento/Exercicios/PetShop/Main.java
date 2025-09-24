@@ -1,12 +1,10 @@
-package Dio.curso.modulos.POO_Estrutura_de_Dados.Codigos_de_Aula.Abstracao_e_Encapsulamento.Exercicios.PetShop;
-
-import Dio.curso.modulos.POO_Estrutura_de_Dados.Exercicios.Conta_Bancaria.Pet;
+package Dio.curso.modulos.POO_Estrutura_de_Dados.Abstracao_e_Encapsulamento.Exercicios.PetShop;
 
 import java.util.Scanner;
 
 public class Main {
         private final static Scanner scan = new Scanner(System.in);
-        private final static Dio.curso.modulos.POO_Estrutura_de_Dados.Exercicios.Conta_Bancaria.PetMachine petMachine = new Dio.curso.modulos.POO_Estrutura_de_Dados.Exercicios.Conta_Bancaria.PetMachine();
+        private final static PetMachine petMachine = new PetMachine();
     public static void main(String[] args){
         var option = -1;
 

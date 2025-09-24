@@ -18,6 +18,6 @@ public class MainInterfaceReproducer {
 
             }
         };
-        musicPlayer.playMusci();
+        //musicPlayer.playMusci();
     }
 }

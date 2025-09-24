@@ -1,4 +1,4 @@
-package Dio.curso.modulos.POO_Estrutura_de_Dados.Codigos_de_Aula.Abstracao_e_Encapsulamento;
+package Dio.curso.modulos.POO_Estrutura_de_Dados.Abstracao_e_Encapsulamento;
 
 public class Main1 {
     public static void main(String[] args){
